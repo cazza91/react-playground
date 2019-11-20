@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage';
 import Header from './layout/Header';
 import styled from 'styled-components';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import WelcomeExplanation from './welcome/Explanation';
 
 function BaseLayout({location}) {
   return (
@@ -29,6 +30,7 @@ function BaseLayout({location}) {
                   <Route path="/login" component={LoginPage} />
                   <Route path="/register" component={RegisterPage} />
                   <Route path="/me" component={ProfilePage} />
+                  <Route path="/welcome" component={WelcomeExplanation} />
                 </Switch>
               </section>
             </CSSTransition>

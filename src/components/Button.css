@@ -1,0 +1,26 @@
+:root {
+  --primary: blue;
+  --danger: red;
+  --warning: yellow;
+  --success: limegreen;
+  --white: #fdfdfd;
+  --dark: #242526;
+}
+
+.btn {
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn__primary__solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
