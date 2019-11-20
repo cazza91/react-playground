@@ -13,7 +13,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 function BaseLayout({location}) {
   return (
     <div className="base">
-      <Header />
+      {/* <Header /> */}
       <Wrapper>
         <TransitionGroup className="transition-group">
             <CSSTransition
@@ -39,24 +39,6 @@ function BaseLayout({location}) {
 }
 
 const Wrapper = styled.div`
-.fade-enter {
-  opacity: 0.01;
-}
-
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms ease-in;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit.fade-exit-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
-
 .translate-and-fade-animation {
   &-enter {
     transform: translateX(-200px);
@@ -81,35 +63,6 @@ const Wrapper = styled.div`
     opacity: 0.01;
     transition: opacity 300ms ease-in, transform 300ms ease-in-out;
   }
-}
-
-
-
-
-
-.translate-and-fade {
-  transform: translateX(-100px);
-  opacity: 0.01;
-}
-
-.translate-and-fade-enter.translate-and-fade-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: 
-    opacity 300ms ease-in,
-    transform 300ms ease-in-out;
-}
-
-translate-and-fade-exit {
-  transform: translateX(0);
-  opacity: 1;
-}
-.translate-and-fade-exit.translate-and-fade-exit-active {
-  transform: translateX(300px);
-  opacity: 0.01;
-  transition: 
-    opacity 300ms ease-in,
-    transform 300ms ease-in-out;
 }
 
 div.transition-group {
