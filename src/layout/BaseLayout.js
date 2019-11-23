@@ -1,20 +1,18 @@
 import { Route, Switch, withRouter } from 'react-router-dom';
 import React from 'react';
-import HomePage from './pages/HomePage';
-import ContactPage from './pages/ContactPage';
-import LoginPage from './pages/LoginPage';
-import ProfilePage from './pages/ProfilePage';
-import RegisterPage from './pages/RegisterPage';
-import AboutPage from './pages/AboutPage';
-import Header from './layout/Header';
+import HomePage from '../pages/HomePage';
+import ContactPage from '../pages/ContactPage';
+import LoginPage from '../pages/LoginPage';
+import ProfilePage from '../pages/ProfilePage';
+import RegisterPage from '../pages/RegisterPage';
+import AboutPage from '../pages/AboutPage';
 import styled from 'styled-components';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import WelcomeExplanation from './welcome/Explanation';
+import WelcomeGreeting from '../welcome/Greeting';
 
 function BaseLayout({location}) {
   return (
     <div className="base">
-      {/* <Header /> */}
       <Wrapper>
         <TransitionGroup className="transition-group">
             <CSSTransition
@@ -30,7 +28,7 @@ function BaseLayout({location}) {
                   <Route path="/login" component={LoginPage} />
                   <Route path="/register" component={RegisterPage} />
                   <Route path="/me" component={ProfilePage} />
-                  <Route path="/welcome" component={WelcomeExplanation} />
+                  <Route path="/welcome" component={WelcomeGreeting} />
                 </Switch>
               </section>
             </CSSTransition>

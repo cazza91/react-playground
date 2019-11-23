@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 
-const WelcomeExplanation = () => {
+const WelcomeGreeting = () => {
     return (
         <div>
             <span role="img" aria-label="mano che saluta!" class="emoji">👋</span>
@@ -11,4 +11,4 @@ const WelcomeExplanation = () => {
     )
 }
 
-export default WelcomeExplanation;
+export default WelcomeGreeting;
