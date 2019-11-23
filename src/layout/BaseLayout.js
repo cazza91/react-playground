@@ -8,7 +8,7 @@ import RegisterPage from '../pages/RegisterPage';
 import AboutPage from '../pages/AboutPage';
 import styled from 'styled-components';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import WelcomeGreeting from '../welcome/Greeting';
+import Welcome from '../welcome/Welcome';
 
 function BaseLayout({location}) {
   return (
@@ -28,8 +28,9 @@ function BaseLayout({location}) {
                   <Route path="/login" component={LoginPage} />
                   <Route path="/register" component={RegisterPage} />
                   <Route path="/me" component={ProfilePage} />
-                  <Route path="/welcome" component={WelcomeGreeting} />
+                  <Route path="/welcome" component={Welcome} />
                 </Switch>
+            
               </section>
             </CSSTransition>
           </TransitionGroup>
@@ -73,26 +74,6 @@ section.route-section {
   width: 100%;
   top: 0;
   left: 0;
-}
-
-.anim_mobile_selectors {
-  &-enter {
-      opacity: 0.01;
-  }
-  &-enter-active {
-      opacity: 0.01;
-  }
-   &-enter-done {
-      opacity:1; 
-      transition: opacity 500ms linear;
-  }
-  &-exit {
-      opacity:1;
-  }
-  &-exit-active {
-      opacity: 0.01;
-      transition: opacity 500ms linear;
-  }
 }
 
 `
