@@ -1,8 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
     return (
-         <h1>Questo è Homepage</h1>
+        <div>
+            <h1>Questo è Homepage</h1>
+            <Link to="/welcome">Vai al welcome</Link>
+        </div>
     )
 }
 

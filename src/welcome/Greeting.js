@@ -4,12 +4,16 @@ import Button from '../components/Button';
 
 const WelcomeGreeting = () => {
     return (
-        <div>
-            <span role="img" aria-label="mano che saluta!" className="emoji">👋</span>
-            <h2>Benvenuto!</h2>
-            <Button>
-                <Link to='/welcome/who-are-you'>Avanti</Link>
-            </Button>
+        <div className="welcome-content greeting">
+            <div className="welcome-content__main-section">
+                <span role="img" aria-label="mano che saluta!" className="emoji">👋</span>
+                <h2 className="h1">Benvenuto!</h2>
+            </div>
+            <div className="welcome-content__bottom-section">
+                <Button>
+                    <Link to='/welcome/who-are-you'>Avanti</Link>
+                </Button>
+            </div>
         </div>
     )
 }
