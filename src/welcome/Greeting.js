@@ -10,7 +10,7 @@ const WelcomeGreeting = () => {
                 <h2 className="h1">Benvenuto!</h2>
             </div>
             <div className="welcome-content__bottom-section">
-                <Button>
+                <Button buttonSize={'btn__medium'}>
                     <Link to='/welcome/who-are-you'>Avanti</Link>
                 </Button>
             </div>

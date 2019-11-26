@@ -17,7 +17,7 @@ const WelcomePromptName = () => {
         </div>
       </div>
       <div className="welcome-content__bottom-section">
-          <Button>
+          <Button buttonSize={'btn__medium'}>
               <Link to='/welcome'>Indietro</Link>
           </Button>
       </div>
